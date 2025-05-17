@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Atividade 4</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04-cadastro</title>
 </head>
 <body>
-   
-    <h1>Cadastro</h1>
+    
+    <form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="post">
+        Login : <br>
+        <input type="text"  required name="login"><br>
 
-    <form action="https://qfqdkj.hospedagemelastica.com.br/pweb/salvar.jsp" method="POST">
+        Senha:<br>
+        <input type="password" maxlength="8" name="senha"><br>
+        Confirma Senha : <br>
+        <input type="password" name="confirmarsenha"><br>
 
-        Login:<br/>
-        <input type="text" name="login"><br/>
-
-        Senha:<br/>
-        <input type="password" name="senha"><br/>
-
-        Confirme sua senha:<br/>
-        <input type="password" name="Confirmasenha"><br/>
-
-        Nome:<br/>
-        <input type="text" name="Nome"><br/>
+        Nome : <br>
+        <input type="text" name="nome"><br>
 
         Sexo : <br>
         <input type="radio" value="Masculino" name="sexo">Masculino<br>
         <input type="radio" value="Feminino" name="sexo">Feminino<br>
 
-        Email:<br/>
-        <input type="email" name="Email"><br/>
+        Email : <br>
+        <input type="email" name="email"><br>
 
         Interesses : <br>
         <input type="checkbox" value="Futebol" name="interesses">Futebol<br>
@@ -39,12 +32,11 @@
         <input type="checkbox" value="Economia" name="interesses">Economia<br>
         <input type="checkbox" value="Carros" name="interesses">Carros<br>
         <input type="checkbox" value="Celebridades" name="interesses">Celebridades<br>
-        
        
-        Estado:<br/>
-        <select name="estado" id="estado">
-          
-          <option value="SP">SP</option>
+
+        Estado : <br>
+        <select name="estado">
+            <option value="SP">SP</option>
           <option value="PI">PI</option>
           <option value="MA">MA</option>
           <option value="CE">CE</option>
@@ -73,23 +65,14 @@
           <option value="SC">SC</option>
           <option value="SE">SE</option>
           <option value="TO">TO</option>
+        </select><br>
 
-        </select>
-
-        <br/>
-
-        Observações:<br/>
-        <textarea name="observacao" id="observacao"></textarea>
-        
-        <br/>
-
-        <br/>
+        Observação : <br>
+      
+        <textarea name="observacao"></textarea><br><br>
 
         <input type="submit" value="Enviar">
-       
-
-
+      
     </form>
-
 </body>
 </html>
